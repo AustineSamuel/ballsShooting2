@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <title>Play JS Canvas Game</title>
+  <style>
+body{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+button{
+  color:white;
+  outline:none;
+  bordeR:none;
+  background:none;
+}
+.score{
+  position:fixed;
+  color:white;
+}
+.score button{
+animation:none 1s infinite;
+}
+.score .fa{
+  font-size:large;
+  padding-left:5px;
+ }
+ .score .fa:hover{
+   color:rgb(255, 0, 64);
+ }
+@keyframes sign{
+  0%{color:rgb(248, 43, 112)}
+  50%{color:white}
+  100%{color:rgb(50, 50, 241)}
+}
+::selection{
+  background:inherit;
+  color:initial;
+}
+</style>
+</head>
+<body>
+  <div class="score">
+    <span>Score : </span><b>0</b><button>auto shoot<span class="fa fa-circle-o"></span></button>
+  </div>
+
+  <canvas></canvas>
+
+</body>
+<script src="play.js"></script>
+
+</html>
